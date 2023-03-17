@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+.wrapper .img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 185px;
+    object-fit: cover;
+}
+.wrapper .subcard{
+    background-color: cadetblue;
+    display: flex;
+    min-height: 100px;
+}
+.wrapper .subcard .logo{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: .9em;
+}
+.wrapper .subcard div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.wrapper .subcard div .title{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 0;
+}
+.wrapper .subcard div .channel{
+    margin-top: .5em;
+}
+.wrapper .subcard div .channel,
+.wrapper .subcard div .date{
+    margin: 0;
+    font-size: 12px;
+    line-height: 18px;
+}
+.wrapper .subcard div .date{
+    margin-bottom: auto;
+}

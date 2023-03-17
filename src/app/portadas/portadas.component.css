@@ -7,34 +7,3 @@
     margin-top: 1em;
     justify-content: center;
 }
-.wrapper .img{
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 185px;
-    object-fit: cover;
-}
-.wrapper .subcard{
-    background-color: cadetblue;
-    display: flex;
-}
-.wrapper .subcard .logo{
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    margin-right: .9em;
-}
-.wrapper .subcard div{}
-.wrapper .subcard div .title{
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    margin-top: 0;
-    margin-bottom: .5em
-}
-.wrapper .subcard div .channel,
-.wrapper .subcard div .date{
-    margin: 0;
-    font-size: 12px;
-    line-height: 18px;
-}

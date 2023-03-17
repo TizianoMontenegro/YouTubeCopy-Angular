@@ -1,8 +1,8 @@
 <div class="wrapper">
     
-    <div class="card" *ngFor="let video of videos; let i = index">
+    <!-- <div class="card" *ngFor="let video of videos; let i = index">
 
-        <img (mouseover)="gifActive(i, $event)" class="img" id="card-img" src="{{ video.img }}" alt="Portada">
+        <img class="img" id="card-img" src="{{ video.img }}" alt="Portada">
 
         <div class="subcard">
 
@@ -20,6 +20,10 @@
 
         </div>
 
-    </div>
+            <button>add favorite</button>
+
+    </div> -->
+    <app-card [data]="video"
+    *ngFor="let video of videos"></app-card>
 
 </div>

@@ -9,7 +9,12 @@
     max-width: 100px;
     max-height: 35px;
 }
-.nav .link{
+.nav .links{
+    display: flex;
+    gap: 1.5em;
+}
+.nav .links .link{
     color: #333;
     text-decoration: none;
+    font-size: .9em;
 }

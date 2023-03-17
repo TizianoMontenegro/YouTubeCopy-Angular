@@ -1,1 +1,9 @@
-<p>favoritos works!</p>
+<div class="wrapper" *ngIf="videos.length > 0">
+    <h2>Favoritos:</h2>
+    <div class="videos">
+        <div class="video" *ngFor="let video of videos; let i = index">
+            <img class="img" [src]="video.img" alt="video #{{ i }}">
+            <h3 class="title">{{ video.title }}</h3>
+        </div>
+    </div>
+</div>
