@@ -6,4 +6,8 @@ import { HttpClient } from '@angular/common/http';
 export class HttpRequestsService {
 
   constructor(private httpClient: HttpClient) { }
+
+  load(url: string) {
+    return this.httpClient.get(url)
+  }
 }

@@ -27,3 +27,18 @@
     line-height: 20px;
     margin-top: 0;
 }
+
+.wrapper .go {
+    position: fixed;
+    z-index: 100;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #eee;
+    padding: .6em 1.5em;
+    border-radius: 20px;
+    color: #222;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 12px;
+}

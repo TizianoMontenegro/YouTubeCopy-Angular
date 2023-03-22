@@ -1,4 +1,4 @@
-<div class="wrapper" *ngIf="videos.length > 0">
+<div id="favoritos" class="wrapper" *ngIf="videos.length > 0">
     <h2>Favoritos:</h2>
     <div class="videos">
         <div class="video" *ngFor="let video of videos; let i = index">
@@ -6,4 +6,5 @@
             <h3 class="title">{{ video.title }}</h3>
         </div>
     </div>
+    <a class="go" href="#favoritos">Ir a favoritos</a>
 </div>
