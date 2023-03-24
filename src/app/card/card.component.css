@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+.wrapper .card{
+    cursor: pointer;
+}
 .wrapper .img{
     width: 100%;
     height: 100%;

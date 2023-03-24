@@ -25,8 +25,8 @@ export class CardComponent implements OnInit {
     this.date = this.data.date;
   }
 
-  cons() {
-    // console.log(this.data);
-    this.videoService.favoriteTriggerEvent.emit(this.data);
-  }
+  // cons() {
+  //   console.log(this.data);
+  //   this.videoService.favoriteTriggerEvent.emit(this.data);
+  // }
 }

@@ -23,7 +23,11 @@
             <button>add favorite</button>
 
     </div> -->
-    <app-card [data]="video"
-    *ngFor="let video of videos"></app-card>
+    <div class="card" *ngFor="let video of videos; let i = index">
+        <app-card [data]="video"
+        [routerLink]="['/post-description/',i]"></app-card>
+
+        <button (click)="add(i)">Add favorite</button>
+    </div>
 
 </div>

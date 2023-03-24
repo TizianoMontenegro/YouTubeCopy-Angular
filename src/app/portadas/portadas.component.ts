@@ -1,3 +1,4 @@
+import { VideoService } from './../video.service';
 import { Component, OnInit } from '@angular/core';
 import { Video } from '../video.module';
 import { HttpRequestsService } from '../http-requests.service';
@@ -11,12 +12,18 @@ export class PortadasComponent implements OnInit{
   
   videos: Video[] = []
 
-  constructor(private httpRequestsService: HttpRequestsService) {}
+  constructor(
+    private httpRequestsService: HttpRequestsService,
+    private videoService: VideoService) {}
 
   ngOnInit():void {
     this.httpRequestsService.load("assets/videos-api.json").subscribe(data => {
       console.log(data)
       this.videos = Object.values(data)
     })
+  }
+
+  add(id: number) {
+    this.videoService.favoriteTriggerEvent.emit(this.videos[id])
   }
 }
