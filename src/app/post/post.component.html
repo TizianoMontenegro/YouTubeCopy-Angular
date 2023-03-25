@@ -1,11 +1,19 @@
 <div class="wrapper">
     <div class="first-section">
-        <img [src]="data.img" alt="portada">
+        <img class="img" [src]="data.img" alt="portada">
+        <form class="comment">
+            <textarea class="area" placeholder="Escribe un comentario"></textarea>
+            <button class="send">ENVIAR</button>
+        </form>
     </div>
     <div class="second-section">
         <div>
-            <img [src]="data.logo" alt="logo">
-            <h3>{{ data.title }}</h3>
+            <h3 class="title">{{ data.title }}</h3>
+
+            <div class="channel">
+                <img class="img" [src]="data.logo" alt="logo">
+                <p class="name">{{ data.channel }}</p>
+            </div>
         </div>
     </div>
 </div>

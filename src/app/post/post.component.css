@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    background-color: antiquewhite;
+    padding: 1.8em;
+}
+.wrapper .first-section{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 1fr 30%;
+}
+.wrapper .first-section .img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+.wrapper .first-section .comment{
+    background-color: navy;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: .6em;
+}
+.wrapper .first-section .comment .area{
+    min-height: 100px;
+    padding: .5em;
+    resize: none;
+}
+.wrapper .first-section .comment .send{
+    height: 30px;
+}
+.wrapper .second-section{
+    background-color: brown;
+}
+.wrapper .second-section .title{
+    font-size: 1.2em;
+}
+.wrapper .second-section .channel{
+    display: flex;
+    align-items: center;
+    gap: .8em;
+}
+.wrapper .second-section .channel .img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.wrapper .second-section .channel .name{
+    margin: 0;
+}
